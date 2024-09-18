@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="hf-model-downloader",
     version="0.1",
-    packages=find_packages(),
+    py_modules=['hf_model_downloader'],  # 指定单一模块
     entry_points={
         'console_scripts': [
             'hf-model-downloader=hf_model_downloader:main',
