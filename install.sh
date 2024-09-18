@@ -6,12 +6,12 @@ if ! command -v python3 &>/dev/null; then
     exit 1
 fi
 
-# 创建虚拟环境（可选）
-echo "创建虚拟环境..."
-python3 -m venv venv
+# # 创建虚拟环境（可选）
+# echo "创建虚拟环境..."
+# python3 -m venv venv
 
-# 激活虚拟环境
-source venv/bin/activate
+# # 激活虚拟环境
+# source venv/bin/activate
 
 # 安装依赖项
 echo "安装依赖项..."

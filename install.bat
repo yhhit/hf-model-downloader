@@ -9,13 +9,13 @@ IF ERRORLEVEL 1 (
     EXIT /B 1
 )
 
-REM 创建虚拟环境
-echo 正在创建虚拟环境...
-python -m venv venv
+@REM REM 创建虚拟环境
+@REM echo 正在创建虚拟环境...
+@REM python -m venv venv
 
-REM 激活虚拟环境
-echo 正在激活虚拟环境...
-call venv\Scripts\activate
+@REM REM 激活虚拟环境
+@REM echo 正在激活虚拟环境...
+@REM call venv\Scripts\activate
 
 REM 升级 pip 并安装依赖项
 echo 正在安装依赖项...
