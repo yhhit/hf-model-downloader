@@ -34,20 +34,13 @@ install.bat
 
 如果你希望手动安装，也可以按以下步骤操作：
 
-1. 创建虚拟环境并激活：
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-2. 安装依赖项：
+1. 安装依赖项：
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. 安装工具：
+2. 安装工具：
 
 ```bash
 pip install .
@@ -79,13 +72,6 @@ hf-model-downloader --repo_id nvidia/canary-1b --filename README.md --save_dir .
 - `--proxies`：可选参数，设置代理。
 - `--no_resume`：可选参数，禁用断点续传。
 
-## 退出虚拟环境
-
-安装和使用完成后，你可以通过运行以下命令退出虚拟环境：
-
-```bash
-deactivate
-```
 ## 登陆huggingface
 
 部分仓库需要登陆Huggingface并完成申请才可以使用。在Huggingface模型页面完成申请后，使用以下命令登陆Huggingface账号。

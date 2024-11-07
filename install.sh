@@ -22,12 +22,13 @@ pip install -r requirements.txt
 echo "安装 hf-model-downloader 工具..."
 pip install .
 
-echo "安装完成。要使用工具，请激活虚拟环境并运行 hf-model-downloader。"
+echo "安装完成。要使用工具，请运行 hf-model-downloader"
+# echo "安装完成。要使用工具，请激活虚拟环境并运行 hf-model-downloader"
 echo "例如："
 echo "source venv/bin/activate"
-echo "hf-model-downloader --repo_id bert-base-uncased --filename pytorch_model.bin --save_dir ./my_model_files"
+echo "hf-model-downloader --repo_id nvidia/canary-1b --filename README.md --save_dir ./canary-1b --endpoint https://hf-mirror.com"
 echo "或"
-echo "hf-model-downloader --repo_id bert-base-uncased --save_dir ./my_model_repo"
+echo "hf-model-downloader --repo_id nvidia/canary-1b --save_dir ./canary-1b --endpoint https://hf-mirror.com"
 
-# 提示用户如何退出虚拟环境
-echo "要退出虚拟环境，请运行 'deactivate'。"
+# # 提示用户如何退出虚拟环境
+# echo "要退出虚拟环境，请运行 'deactivate'。"
