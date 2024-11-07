@@ -86,6 +86,13 @@ hf-model-downloader --repo_id bert-base-uncased --save_dir ./my_model_repo
 ```bash
 deactivate
 ```
+## 登陆huggingface
+
+部分仓库需要登陆Huggingface才可以使用
+
+```bash
+HF_ENDPOINT=https://hf-mirror.com huggingface-cli login
+```
 
 ## 许可
 
