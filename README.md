@@ -57,21 +57,21 @@ pip install .
 
 一旦安装完成，你可以使用以下命令从 Hugging Face 下载单个文件或整个存储库：
 
-### 下载单个文件
-
-```bash
-hf-model-downloader --repo_id bert-base-uncased --filename pytorch_model.bin --save_dir ./my_model_files
-```
-
 ### 下载整个存储库
 
 ```bash
-hf-model-downloader --repo_id bert-base-uncased --save_dir ./my_model_repo
+hf-model-downloader --repo_id nvidia/canary-1b --save_dir ./canary-1b --endpoint https://hf-mirror.com
+```
+
+### 下载单个文件
+
+```bash
+hf-model-downloader --repo_id nvidia/canary-1b --filename README.md --save_dir ./canary-1b --endpoint https://hf-mirror.com
 ```
 
 ### 参数说明
 
-- `--repo_id`：模型库的路径或模型名称，例如 `bert-base-uncased`。
+- `--repo_id`：模型库的路径或模型名称，例如 `nvidia/canary-1b`。
 - `--filename`：可选参数，指定要下载的文件名称。如果未指定，将下载整个存储库。
 - `--save_dir`：可选参数，指定保存下载文件的目录。
 - `--cache_dir`：可选参数，指定缓存目录路径。
@@ -88,7 +88,7 @@ deactivate
 ```
 ## 登陆huggingface
 
-部分仓库需要登陆Huggingface才可以使用
+部分仓库需要登陆Huggingface并完成申请才可以使用。在Huggingface模型页面完成申请后，使用以下命令登陆Huggingface账号。
 
 ```bash
 HF_ENDPOINT=https://hf-mirror.com huggingface-cli login
