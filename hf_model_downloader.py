@@ -1,6 +1,7 @@
 import os
 import argparse
 import shutil
+import json
 from huggingface_hub import hf_hub_download, snapshot_download
 
 def download_hf_file(repo_id, filename, save_dir=None, cache_dir=None, endpoint=None, proxies=None, resume=True):
@@ -82,7 +83,8 @@ def main():
 
     args = parser.parse_args()
 
-    proxies = eval(args.proxies) if args.proxies else None
+    
+    proxies = json.loads(args.proxies) if args.proxies else None
 
     if args.filename:
         download_hf_file(
